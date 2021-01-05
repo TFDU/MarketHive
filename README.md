@@ -1,6 +1,6 @@
 # MarketHive
 An Android based second hand market app
 ## Demo
-![image](https://github.com/TFDU/TwitchPlus/blob/main/demo/TwitchPlus.gif)
+![image](https://github.com/TFDU/MarketHive/blob/main/demo/MarketHive.gif)
 ## Developer Log
-This is the log in development process
+Original Link: https://gitlab.com/flag-camp-team-5
