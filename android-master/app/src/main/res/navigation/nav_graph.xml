@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/navigation_home">
+
+    <keep_state_fragment
+        android:id="@+id/navigation_home"
+        android:name="com.flagcamp.secondhands.ui.home.HomeContainerFragment"
+        android:label="@string/app_home" />
+    <keep_state_fragment
+        android:id="@+id/navigation_search"
+        android:name="com.flagcamp.secondhands.ui.search.SearchContainerFragment"
+        android:label="@string/app_search" />
+    <keep_state_fragment
+        android:id="@+id/navigation_post"
+        android:name="com.flagcamp.secondhands.ui.post.PostContainerFragment"
+        android:label="@string/app_post" />
+    <keep_state_fragment
+        android:id="@+id/navigation_fav"
+        android:name="com.flagcamp.secondhands.ui.fav.FavContainerFragment"
+        android:label="@string/app_fav" />
+    <keep_state_fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.flagcamp.secondhands.ui.profile.ProfileContainerFragment"
+        android:label="@string/app_profile" />
+</navigation>

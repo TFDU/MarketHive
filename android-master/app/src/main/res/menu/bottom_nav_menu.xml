@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--TODO： icon有各负责人更改，ID名字不要更改！！！！-->
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/app_home"/>
+
+    <item
+        android:id="@+id/navigation_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="@string/app_search"/>
+
+    <item
+        android:id="@+id/navigation_post"
+        android:icon="@drawable/ic_post_24dp"
+        android:title="@string/app_post"/>
+
+    <item
+        android:id="@+id/navigation_fav"
+        android:icon="@drawable/ic_favorite_24dp"
+        android:title="@string/app_fav"/>
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_profile_24dp"
+        android:title="@string/app_profile"/>
+
+
+</menu>

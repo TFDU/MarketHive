@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_home"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.flagcamp.secondhands.ui.home.HomeFragment"
+        android:label="@string/app_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_detail"
+            app:destination="@id/navigation_detail" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_list"
+            app:destination="@id/navigation_list" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_map"
+            app:destination="@id/navigation_map" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_detail"
+        android:name="com.flagcamp.secondhands.ui.productDetail.ProductDetailFragment"
+        android:label="@string/app_detail"
+        tools:layout="@layout/fragment_product_detail">
+        <argument
+            android:name="product"
+            app:argType="com.flagcamp.secondhands.model.Product"/>
+        <action
+            android:id="@+id/action_navigation_detail_to_navigation_message"
+            app:destination="@id/navigation_message" />
+        <action
+            android:id="@+id/action_navigation_detail_to_navigation_visitor_view_profile"
+            app:destination="@id/navigation_visitor_view_profile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_message"
+        android:name="com.flagcamp.secondhands.ui.chat.MessageListFragment"
+        android:label="@string/app_message"
+        tools:layout="@layout/fragment_message_list">
+        <argument
+            android:name="user"
+            app:argType="com.flagcamp.secondhands.model.User" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_visitor_view_profile"
+        android:name="com.flagcamp.secondhands.ui.profile.VisitorViewProfileFragment"
+        android:label="@string/app_visitor_view_profile"
+        tools:layout="@layout/fragment_visitor_view_profile">
+        <action
+            android:id="@+id/action_navigation_visitor_view_profile_to_navigation_message"
+            app:destination="@id/navigation_message" />
+        <argument
+            android:name="user"
+            app:argType="com.flagcamp.secondhands.model.User" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_map"
+        android:name="com.flagcamp.secondhands.ui.map.MapFragment"
+        android:label="@string/app_map"
+        tools:layout="@layout/fragment_map">
+        <action
+            android:id="@+id/action_navigation_map_to_navigation_details"
+            app:destination="@id/navigation_detail"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_list"
+        android:name="com.flagcamp.secondhands.ui.list.ListFragment"
+        android:label="@string/app_list"
+        tools:layout="@layout/fragment_list">
+        <action
+            android:id="@+id/action_navigation_list_to_navigation_details"
+            app:destination="@id/navigation_detail"/>
+        <argument
+            android:name="category"
+            app:argType="com.flagcamp.secondhands.model.Category"/>
+    </fragment>
+
+</navigation>

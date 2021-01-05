@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#026157</color>
+    <color name="colorAccent">#f2acb9</color>
+    
+    <color name="backgroundGreen">#b7d9d5</color>
+    <color name="lightGray">#D3D3D3</color>
+    <color name="imessageBlue">#78C5EF</color>
+    <color name="white">#fff</color>
+    <color name="text_black">#252121</color>
+    <color name="light_gray">#dedddd</color>
+    <color name="background">#ccfff2</color>
+</resources>

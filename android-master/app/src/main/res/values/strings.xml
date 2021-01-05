@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">Market Hive</string>
+    <string name="app_home">Home</string>
+    <string name="app_search">Search</string>
+    <string name="app_fav">Favorite</string>
+    <string name="app_profile">Profile</string>
+    <string name="app_visitor_view_profile">VisitorViewProfile</string>
+    <string name="app_post">Post</string>
+    <string name="app_detail">Detail</string>
+    <string name="app_map">Map</string>
+    <string name="app_message">Message</string>
+    <string name="app_chat">Chat</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="facebook_app_id">246547470051744</string>
+    <string name="fb_login_protocol_scheme">fb246547470051744</string>
+    <string name="app_list">List</string>
+
+    <string-array name="category">
+        <item>All Categories</item>
+        <item>Baby &amp; Kids</item>
+        <item>Furniture</item>
+        <item>Clothing &amp; Shoes</item>
+        <item>Beauty &amp; Health</item>
+        <item>Cars</item>
+        <item>Household</item>
+        <item>Electronics</item>
+    </string-array>
+    <string-array name="location">
+        <item>All States</item>
+        <item>AL</item>
+        <item>AK</item>
+        <item>AZ</item>
+        <item>AR</item>
+        <item>CA</item>
+        <item>CO</item>
+        <item>CT</item>
+        <item>DE</item>
+        <item>FL</item>
+        <item>GA</item>
+        <item>HI</item>
+        <item>ID</item>
+        <item>IL</item>
+        <item>IN</item>
+        <item>IA</item>
+        <item>KS</item>
+        <item>KY</item>
+        <item>LA</item>
+        <item>ME</item>
+        <item>MD</item>
+        <item>MA</item>
+        <item>MI</item>
+        <item>MN</item>
+        <item>MS</item>
+        <item>MO</item>
+        <item>MT</item>
+        <item>NE</item>
+        <item>NV</item>
+        <item>NH</item>
+        <item>NJ</item>
+        <item>NM</item>
+        <item>NY</item>
+        <item>NC</item>
+        <item>ND</item>
+        <item>OH</item>
+        <item>OK</item>
+        <item>OR</item>
+        <item>PA</item>
+        <item>RI</item>
+        <item>SC</item>
+        <item>SD</item>
+        <item>TN</item>
+        <item>TX</item>
+        <item>UT</item>
+        <item>VT</item>
+        <item>VA</item>
+        <item>WA</item>
+        <item>WV</item>
+        <item>WI</item>
+        <item>WY</item>
+    </string-array>
+</resources>
+

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_profile"
+    app:startDestination="@id/navigation_profile">
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.flagcamp.secondhands.ui.profile.ProfileFragment"
+        android:label="@string/app_profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_chatRoom"
+            app:destination="@id/navigation_chatRoom" />
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_order_home"
+            app:destination="@id/navigation_order_home"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_chatRoom"
+        android:name="com.flagcamp.secondhands.ui.chat.ChatRoomFragment"
+        android:label="@string/app_chat"
+        tools:layout="@layout/fragment_chat_room">
+        <action
+            android:id="@+id/action_navigation_chatRoom_to_navigation_message"
+            app:destination="@id/navigation_message" />
+        <argument
+            android:name="user"
+            app:argType="com.flagcamp.secondhands.model.User" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_message"
+        android:name="com.flagcamp.secondhands.ui.chat.MessageListFragment"
+        android:label="@string/app_message"
+        tools:layout="@layout/fragment_message_list">
+        <argument
+            android:name="user"
+            app:argType="com.flagcamp.secondhands.model.User" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_order_home"
+        android:name="com.flagcamp.secondhands.ui.order.OrderHomeFragment"
+        android:label="Order Management"
+        tools:layout="@layout/fragment_order_home">
+        <action
+            android:id="@+id/action_order_home_to_order_history"
+            app:destination="@id/navigation_order_history" />
+        <action
+            android:id="@+id/action_navigation_order_home_to_navigation_order_request"
+            app:destination="@id/navigation_order_request" />
+        <action
+            android:id="@+id/action_navigation_order_home_to_navigation_my_request"
+            app:destination="@id/navigation_my_request" />
+        <action
+            android:id="@+id/action_navigation_order_home_to_navigation_order_post"
+            app:destination="@id/navigation_order_post" />
+        <action
+            android:id="@+id/action_navigation_order_home_to_navigation_sale_history"
+            app:destination="@id/navigation_sale_history" />
+        <argument
+            android:name="user"
+            app:argType="com.flagcamp.secondhands.model.User" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_order_history"
+        android:name="com.flagcamp.secondhands.ui.order.OrderHistoryFragment"
+        android:label="Order History">
+        <action
+            android:id="@+id/action_navigation_order_history_to_navigation_detail"
+            app:destination="@id/navigation_detail" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_order_request"
+        android:name="com.flagcamp.secondhands.ui.order.OrderRequestFragment"
+        android:label="Order Request" >
+        <action
+            android:id="@+id/action_navigation_order_request_to_navigation_detail"
+            app:destination="@id/navigation_detail" />
+        <action
+            android:id="@+id/action_navigation_order_request_to_navigation_visitor_view_profile"
+            app:destination="@id/navigation_visitor_view_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_my_request"
+        android:name="com.flagcamp.secondhands.ui.order.MyRequestFragment"
+        android:label="My Request" >
+        <action
+            android:id="@+id/action_navigation_my_request_to_navigation_detail"
+            app:destination="@id/navigation_detail" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_order_post"
+        android:name="com.flagcamp.secondhands.ui.order.OrderPostFragment"
+        android:label="My Post" >
+        <action
+            android:id="@+id/action_navigation_order_post_to_navigation_detail"
+            app:destination="@id/navigation_detail" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_sale_history"
+        android:name="com.flagcamp.secondhands.ui.order.SaleHistoryFragment"
+        android:label="Sale History" >
+        <action
+            android:id="@+id/action_navigation_sale_history_to_navigation_detail"
+            app:destination="@id/navigation_detail" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_detail"
+        android:name="com.flagcamp.secondhands.ui.productDetail.ProductDetailFragment"
+        android:label="@string/app_detail"
+        tools:layout="@layout/fragment_product_detail">
+        <argument
+            android:name="product"
+            app:argType="com.flagcamp.secondhands.model.Product"/>
+        <action
+            android:id="@+id/action_navigation_detail_to_navigation_message"
+            app:destination="@id/navigation_message" />
+        <action
+            android:id="@+id/action_navigation_detail_to_navigation_visitor_view_profile"
+            app:destination="@id/navigation_message" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_visitor_view_profile"
+        android:name="com.flagcamp.secondhands.ui.profile.VisitorViewProfileFragment"
+        android:label="@string/app_visitor_view_profile"
+        tools:layout="@layout/fragment_visitor_view_profile">
+        <action
+            android:id="@+id/action_navigation_visitor_view_profile_to_navigation_message"
+            app:destination="@id/navigation_message" />
+        <argument
+            android:name="user"
+            app:argType="com.flagcamp.secondhands.model.User" />
+    </fragment>
+
+
+</navigation>

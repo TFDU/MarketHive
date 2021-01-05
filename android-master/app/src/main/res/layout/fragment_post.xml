@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.flagcamp.secondhands.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/button_chooseProductImage"
+        android:layout_width="56dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="25dp"
+        android:src="@drawable/newupload" />
+
+    <ImageView
+        android:id="@+id/deleteAll"
+        android:layout_width="56dp"
+        android:layout_height="46dp"
+        android:layout_alignTop="@+id/button_chooseProductImage"
+        android:layout_alignBottom="@+id/button_chooseProductImage"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="6dp"
+        android:layout_toEndOf="@+id/button_chooseProductImage"
+        android:gravity="center"
+        android:src="@drawable/bin" />
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:layout_below="@id/button_chooseProductImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp" />
+
+    <ImageView
+        android:id="@+id/previousBtn"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/image_view"
+        android:layout_marginTop="-100dp"
+        android:layout_marginRight="300dp"
+        android:src="@drawable/greenleft"/>
+
+    <ImageView
+        android:id="@+id/nextBtn"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/image_view"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="-100dp"
+        android:src="@drawable/greenright" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_view"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/product_title"
+                android:layout_width="338dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/product_description"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/textborder"
+                android:hint=" Product Title"
+                android:maxLines="2"
+                android:textColor="#000000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/product_description"
+                android:layout_width="341dp"
+                android:layout_height="80dp"
+                android:layout_above="@+id/product_price"
+                android:layout_below="@id/product_title"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/textborder"
+                android:gravity="start"
+                android:hint=" Product Description (Optional)"
+                android:maxLines="4"
+                android:textColor="#000000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/product_price"
+                android:layout_width="346dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/textborder"
+                android:hint=" Price$ e.g.10.00"
+                android:inputType="numberDecimal"
+                android:textColor="#000000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Spinner
+            android:id="@+id/product_category_spinner"
+            android:layout_width="364dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:textColor="#000000" />
+
+
+        <Spinner
+            android:id="@+id/product_location_spinner"
+            android:layout_width="364dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:textColor="#000000" />
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_postProduct"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp" />
+
+    <Button
+        android:id="@+id/button_postProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/com_facebook_button_background_color"
+        android:text="Post"
+        android:textColor="@color/com_facebook_button_text_color" />
+
+
+</RelativeLayout>
+

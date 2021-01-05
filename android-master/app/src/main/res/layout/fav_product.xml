@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="12dp">
+
+    <ImageView
+        android:id="@+id/fav_product_image_view"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_correct_18dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fav_product_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product:"
+        android:textStyle="bold"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toRightOf="@id/fav_product_image_view"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/fav_product_title_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginStart="2dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintLeft_toRightOf="@id/fav_product_title"
+        app:layout_constraintRight_toLeftOf="@id/fav_product_fav_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Seller unknow" />
+
+    <TextView
+        android:id="@+id/fav_product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text ="Price: "
+        android:textStyle="bold"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toRightOf="@id/fav_product_image_view"
+        app:layout_constraintTop_toBottomOf="@id/fav_product_title"/>
+
+    <TextView
+        android:id="@+id/fav_product_price_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginStart="2dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintLeft_toRightOf="@id/fav_product_price"
+        app:layout_constraintRight_toLeftOf="@id/fav_product_fav_icon"
+        app:layout_constraintTop_toBottomOf="@id/fav_product_title_content"
+        tools:text="unknow" />
+
+    <TextView
+        android:id="@+id/fav_product_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text ="Location: "
+        android:textStyle="bold"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toRightOf="@id/fav_product_image_view"
+        app:layout_constraintTop_toBottomOf="@id/fav_product_price"/>
+
+    <TextView
+        android:id="@+id/fav_product_location_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginStart="2dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintLeft_toRightOf="@id/fav_product_location"
+        app:layout_constraintRight_toLeftOf="@id/fav_product_fav_icon"
+        app:layout_constraintTop_toBottomOf="@id/fav_product_price_content"
+        tools:text="unknow" />
+
+    <TextView
+        android:id="@+id/fav_product_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text ="Status: "
+        android:textStyle="bold"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toRightOf="@id/fav_product_image_view"
+        app:layout_constraintTop_toBottomOf="@id/fav_product_location"/>
+
+    <TextView
+        android:id="@+id/fav_product_status_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginStart="2dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintLeft_toRightOf="@id/fav_product_status"
+        app:layout_constraintRight_toLeftOf="@id/fav_product_fav_icon"
+        app:layout_constraintTop_toBottomOf="@id/fav_product_location_content"
+        tools:text="unknow" />
+    <ImageView
+        android:id="@+id/fav_product_fav_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_favorite_24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

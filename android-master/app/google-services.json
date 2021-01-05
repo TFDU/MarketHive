@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "148908075014",
+    "firebase_url": "https://secondehandmarket.firebaseio.com",
+    "project_id": "secondehandmarket",
+    "storage_bucket": "secondehandmarket.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148908075014:android:2376eb23bd10316e33bb87",
+        "android_client_info": {
+          "package_name": "com.flagcamp.secondhands"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "148908075014-rafgh20ubc9b8l1e13tibpt68sf7vl91.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.flagcamp.secondhands",
+            "certificate_hash": "be024aa767d46c74fe340ab63c4be2ad2572187c"
+          }
+        },
+        {
+          "client_id": "148908075014-1l8scfnq6oec778r63f7cp827mf27992.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpH6stQDSuAaW4eYO4DS8NFkSiirY-W6A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "148908075014-1l8scfnq6oec778r63f7cp827mf27992.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
